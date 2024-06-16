@@ -7486,12 +7486,12 @@ a.anchor-link {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=62387a83-0ba8-4258-b02c-4173fe36c9f3">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=0797015a-8d4c-49fc-aac6-f8f80376d1e8">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [22]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [30]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">dash</span>
@@ -7576,28 +7576,16 @@ Note: you may need to restart the kernel to use updated packages.
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [23]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [32]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">HTML</span>
-
-<span class="n">HTML</span><span class="p">(</span><span class="s2">"""</span>
-<span class="s2">&lt;style&gt;</span>
-<span class="s2">.input_area {</span>
-<span class="s2">    display: none;</span>
-<span class="s2">}</span>
-<span class="s2">&lt;/style&gt;</span>
-<span class="s2">"""</span><span class="p">)</span>
-
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 
 <span class="c1"># Leer el archivo CSV y convertirlo en un DataFrame</span>
 <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">'OBRA.csv'</span><span class="p">)</span>
 
 <span class="c1"># Mostrar las primeras filas del DataFrame para verificar que se leyó correctamente</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
 <span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span> <span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
-
 <span class="n">df</span>
 </pre></div>
 </div>
@@ -7608,36 +7596,8 @@ Note: you may need to restart the kernel to use updated packages.
 <div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>  N° DE TRAMO   TRAMO   VANO (m)  TERNA  FASES  DUCTOS BUZONES  POSTE-15  \
-0           1    1 - 2     81.30      2      3     3.0  Tipo 1       NaN   
-1           2    2 - 3     78.64      2      3     3.0  Tipo 1       NaN   
-2           3    3 - 4     69.99      3      3     4.0  Tipo 1       NaN   
-3         3.a  3 - 3.a     24.78      1      3     1.0  Tipo 2       NaN   
-4         3.1  3 - 3.1     43.59      6      3     6.0  Tipo 1       NaN   
-
-   POSTE-13  C-185 m2  ...  SBC  PARARRAYOS  SECCIONADORES  RO  RV "Y"   RV  \
-0       NaN    487.80  ...  NaN         NaN            3.0 NaN  RV "Y"  NaN   
-1       NaN    471.84  ...  NaN         NaN            NaN NaN     NaN  NaN   
-2       NaN    209.97  ...  NaN         NaN            NaN NaN     NaN  NaN   
-3       NaN       NaN  ...  NaN         3.0            NaN NaN     NaN  NaN   
-4       NaN    392.31  ...  NaN         NaN            NaN NaN     NaN  NaN   
-
-  PUESTA A TIERRA TUBO DE F°G° 160Ømm  TUBO DE F°G° 2"Ø  Unnamed: 39  
-0             1.0                 2.0               1.0          NaN  
-1             NaN                 NaN               NaN          NaN  
-2             NaN                 NaN               NaN          NaN  
-3             1.0                 1.0               1.0          NaN  
-4             NaN                 NaN               NaN          NaN  
-
-[5 rows x 40 columns]
-</pre>
-</div>
-</div>
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[23]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[32]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -8198,20 +8158,10 @@ Note: you may need to restart the kernel to use updated packages.
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [24]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [33]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">HTML</span>
-
-<span class="n">HTML</span><span class="p">(</span><span class="s2">"""</span>
-<span class="s2">&lt;style&gt;</span>
-<span class="s2">.input_area {</span>
-<span class="s2">    display: none;</span>
-<span class="s2">}</span>
-<span class="s2">&lt;/style&gt;</span>
-<span class="s2">"""</span><span class="p">)</span>
-
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="kn">import</span> <span class="nn">dash</span>
 <span class="kn">from</span> <span class="nn">dash</span> <span class="kn">import</span> <span class="n">dcc</span><span class="p">,</span> <span class="n">html</span>
 <span class="kn">from</span> <span class="nn">dash.dependencies</span> <span class="kn">import</span> <span class="n">Input</span><span class="p">,</span> <span class="n">Output</span>
@@ -8228,7 +8178,7 @@ Note: you may need to restart the kernel to use updated packages.
 
 <span class="c1"># Layout de la aplicación</span>
 <span class="n">app</span><span class="o">.</span><span class="n">layout</span> <span class="o">=</span> <span class="n">html</span><span class="o">.</span><span class="n">Div</span><span class="p">([</span>
-    <span class="n">html</span><span class="o">.</span><span class="n">H1</span><span class="p">(</span><span class="s2">"Dashboard de Tramos"</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="p">{</span><span class="s1">'text-align'</span><span class="p">:</span> <span class="s1">'center'</span><span class="p">}),</span>
+    <span class="n">html</span><span class="o">.</span><span class="n">H1</span><span class="p">(</span><span class="s2">"Reporte de Tramos"</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="p">{</span><span class="s1">'text-align'</span><span class="p">:</span> <span class="s1">'center'</span><span class="p">}),</span>
     <span class="n">dcc</span><span class="o">.</span><span class="n">Dropdown</span><span class="p">(</span>
         <span class="nb">id</span><span class="o">=</span><span class="s1">'tramo-dropdown'</span><span class="p">,</span>
         <span class="n">options</span><span class="o">=</span><span class="p">[{</span><span class="s1">'label'</span><span class="p">:</span> <span class="n">tramo</span><span class="p">,</span> <span class="s1">'value'</span><span class="p">:</span> <span class="n">tramo</span><span class="p">}</span> <span class="k">for</span> <span class="n">tramo</span> <span class="ow">in</span> <span class="n">df</span><span class="p">[</span><span class="s1">'N° DE TRAMO'</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()],</span>
